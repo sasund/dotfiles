@@ -1,0 +1,24 @@
+contexts:
+    default:
+        brokers:
+            - localhost:9092
+    prod:
+        brokers:
+            - 192.168.35.11:9092
+            - 192.168.35.12:9092
+            - 192.168.35.13:9092
+        kafkaversion: 1.1.1
+        tls:
+            insecure: true
+    redpanda-local:
+        brokers:
+            - 158.39.122.222:19092
+    stage:
+        brokers:
+            - 192.168.35.51:9092
+            - 192.168.35.52:9092
+            - 192.168.35.53:9092
+        kafkaversion: 1.1.1
+        tls:
+            insecure: true
+current-context: stage
