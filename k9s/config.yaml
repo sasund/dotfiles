@@ -1,17 +1,18 @@
 k9s:
   liveViewAutoRefresh: false
-  screenDumpDir: /Users/staleas/Library/Application Support/k9s/screen-dumps
   refreshRate: 2
   maxConnRetry: 5
   readOnly: false
   noExitOnCtrlC: false
   ui:
-    skin: catppuccin-frappe
     enableMouse: false
     headless: false
-    logoless: false
+    logoless: true
     crumbsless: false
+    reactive: false
     noIcons: false
+    skin: monokai
+    defaultsToFullScreen: false
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
@@ -29,7 +30,6 @@ k9s:
     tail: 100
     buffer: 5000
     sinceSeconds: -1
-    fullScreenLogs: false
     textWrap: false
     showTime: false
   thresholds:
