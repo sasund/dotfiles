@@ -1,4 +1,7 @@
 .DS_Store
-tmux/plugins/
+.config/tmux/plugins/
 raycast
 fzf
+.config/staleas/.env
+/kubeconfig.yaml
+/dotfiles

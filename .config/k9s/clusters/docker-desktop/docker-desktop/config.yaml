@@ -1,0 +1,14 @@
+k9s:
+  cluster: docker-desktop
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+    - all
+    - kube-public
+    - default
+  view:
+    active: po
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost
