@@ -4,4 +4,6 @@
 devbox.*
 gcloud
 install.sh
+sync.sh
+uninstall.sh
 .git
