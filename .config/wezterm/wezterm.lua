@@ -8,6 +8,7 @@ return {
 	
 	window_background_opacity = 0.98,
 	window_decorations = 'RESIZE',
+  send_composed_key_when_left_alt_is_pressed = true,
 	keys = {
 		{
 			key = 'f',
