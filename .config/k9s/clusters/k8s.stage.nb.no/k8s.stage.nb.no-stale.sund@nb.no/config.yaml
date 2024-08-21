@@ -1,0 +1,14 @@
+k9s:
+  cluster: k8s.stage.nb.no
+  namespace:
+    active: nbno
+    lockFavorites: false
+    favorites:
+    - nbno
+    - auau
+    - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

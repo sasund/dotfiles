@@ -1,11 +1,8 @@
 return {
     {
-        "craftzdog/solarized-osaka.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
+        "loctvl842/monokai-pro.nvim",
         config = function()
-            vim.cmd.colorscheme "solarized-osaka"
+            vim.cmd.colorscheme "monokai-pro"
           end
     }
   }

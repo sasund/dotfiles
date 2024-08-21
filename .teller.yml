@@ -1,0 +1,12 @@
+project: dot
+providers:
+  google_secretmanager:
+    env:
+      NGROK_AUTHTOKEN:
+        path: projects/sasund/secrets/ngrok-authtoken/versions/1
+      NGROK_API_KEY:
+        path: projects/sasund/secrets/ngrok-api-key/versions/1
+  hashicorp:
+    env:
+      PROXY_NB:
+        path: projects/
