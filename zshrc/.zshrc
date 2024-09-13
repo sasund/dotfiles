@@ -130,7 +130,7 @@ export K9S_CONFIG_DIR=~/.config/k9s
 
 # System env
 source ~/.config/staleas/.env.system
-source ~/.aliases
+source ~/dotfiles/zshrc/.aliases
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
