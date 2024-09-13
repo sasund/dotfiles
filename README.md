@@ -1,7 +1,11 @@
 
 ### Install with stow:
 ```bash
-stow --target .
+stow <package>
+
+ex:
+
+stow nvim
 ```
 
 ### Homebrew installation:
