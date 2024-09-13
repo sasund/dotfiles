@@ -1,0 +1,116 @@
+
+# Aliases
+
+alias cd='z'
+#alias ls='eza --long --all --no-permissions --no-filesize --no-user --no-time --git'
+alias lst='eza --long --all --no-permissions --no-filesize --no-user --git --sort modified'
+alias fzfp='fzf --preview \"bat --number --color always {}\"'
+alias cat='bat --paging never --theme DarkNeon --style plain'
+
+
+# Eza
+#
+alias ls='eza -F -gh --group-directories-first --git --icons'
+alias lh='ls -d .*'
+alias lD='ls -D'
+alias lc='ls -1'
+
+alias ll='ls -l'
+alias la='ll -a'
+alias tree='ls -T'
+
+alias copilot='gh copilot'
+alias gcs='gh copilot suggest'
+alias gce='gh copilot explain'
+
+# Aliases
+alias zshconfig="code -n ~/.zshrc"
+alias ohmyzsh="code -n ~/.oh-my-zsh"
+
+# ------------------------------------
+# Misc :)
+# ------------------------------------
+alias less='less -r'                            # raw control characters
+alias whence='type -a'                          # where, of a sort
+alias grep='grep --color'                       # show differences in colour
+alias egrep='egrep --color=auto'                # pretty grep
+alias fgrep='fgrep --color=auto'
+alias nmap='nmap -PN'                           # in case host is blocking ping probes.
+alias bc='bc -l'# math
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
+alias baty="bat -l yaml"
+alias batj="bat -l json"
+alias cssh="tmux-cssh"
+alias vmo="curl wttr.in/mo+i+rana"
+alias v2mo="curl v2d.wttr.in/mo+i+rana"
+alias helmd="helm dashboard"
+alias bwe="batwatch --color  --command kubectl get events"
+alias bwp="batwatch --color  --command kubectl get pods"
+alias bws="batwatch --color  --command kubectl get svc"
+alias bwi="batwatch --color  --command kubectl get ing"
+alias bwa="batwatch --color --interval=10  --command kubectl get all"
+alias k9sh="k9s --headless"
+alias kctx="kubectl config get-contexts"
+alias kns="kubectl get namespaces"
+alias kgn="kubectl get namespaces"
+alias reload="source ~/.zshrc"
+alias watch='watch ' # For watch to understand aliases
+alias listenPorts="sudo lsof -i -P | grep LISTEN"
+alias c="curlie"
+alias nbf="nblookupForeman"
+alias nbc="nblookupCname"
+alias nb="nblookup"
+alias k8sdebug="kubectl run -i --tty busyboxdebug --image=harbor.nb.no/auau/tools-jobrunner:debug --rm=true --restart=Never -- sh"
+alias k8sdebugmaven="kubectl run -i --tty maven-java-debug --image=harbor.nb.no/staleas/java-maven-bash-debug:1.1.1_amd64 --rm=true --restart=Never -- sh"
+alias ktr="kubespy trace deploy"
+alias dognb="dog -n 158.39.128.157 -q"
+alias -g RG="| rg"
+alias kubefwd-configserver="sudo kubefwd svc -n nbno -f metadata.name=configserver"
+alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
+alias scp='\scp'
+alias yqnc="yq eval '... comments=\"\"'"
+alias aitop="sudo asitop"
+
+# ------------------------------------
+# Aliases Maven
+# ------------------------------------
+alias mci="mvn clean install"
+alias mi="mvn install"
+alias mrprep="mvn release:prepare"
+alias mrperf="mvn release:perform"
+alias mrrb="mvn release:rollback"
+alias mdep="mvn dependency:tree"
+alias mpom="mvn help:effective-pom"
+alias mcisk="mvn -T 6 clean install -Dmaven.test.skip=true"
+alias mjr="mvn jetty:run"
+alias mcpdb="mvn clean package docker:build"
+alias mpurge="mvn dependency:purge-local-repository"
+alias mddu="mvn versions:display-dependency-updates"
+alias mdt="mvn dependency:tree -Dverbose -Dincludes=commons-collections"
+alias mda="mvn dependency:analyze"
+alias mlp="mvn help:all-profiles"
+alias mwrap="mvn -N io.takari:maven:wrapper"
+alias msonar="mvn clean verify sonar:sonar -Dsonar.host.url=https://tools.nb.no/sonar -Dsonar.login=f3a3b17b7bb22397ddb973cbb77374630e046926"
+alias mboot="mvn spring-boot:run"
+alias mboot_local="mboot -Dspring.profiles.active=local"
+alias mboot_dev="mboot -Dspring.profiles.active=dev"
+alias mboot_prod="mboot -Dspring.profiles.active=prod"
+alias mvn-clean-recursive="find . -name "pom.xml" -exec mvn clean -f '{}' \;"
+
+# ------------------------------------
+# Docker alias and function
+# ------------------------------------
+alias dl="docker ps -l -q"  # Get latest container ID
+alias dps="docker ps"  # Get container process
+alias dpa="docker ps -a"  # Get process included stop container
+alias di="docker images"  # Get images
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"  # Get container IP
+alias dkd="docker run -d -P"  # Run deamonized container, e.g., $dkd base /bin/echo hello
+alias drmi="docker rmi" # remove image
+function dstop() { docker stop $(docker ps -a -q); }  # Stop all containers
+function drm() { docker rm $(docker ps -a -q); }  # Remove all containers
+function dri_all() { docker rmi -f $(docker images -q); }  # Remove all images
+function dbu() { docker build -t=$1 .; }  # Dockerfile build, e.g., $dbu tcnksm/test
+function dri_name() { docker rmi $(docker images |grep $1); }
