@@ -122,11 +122,6 @@ fi
 source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
-# Exports
-export JAVA_HOME=/Users/staleas/.sdkman/candidates/java/current
-export IDEA_JDK=$JAVA_HOME
-export MAVEN_OPTS="-Xmx2048m"
-
 # Krew 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
@@ -141,3 +136,8 @@ source ~/.aliases
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Exports
+export JAVA_HOME=~/.sdkman/candidates/java/current
+export IDEA_JDK=$JAVA_HOME
+export MAVEN_OPTS="-Xmx2048m"
