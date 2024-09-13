@@ -21,4 +21,4 @@ contexts:
         kafkaversion: 1.1.1
         tls:
             insecure: true
-current-context: stage
+current-context: prod

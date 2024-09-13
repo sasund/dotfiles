@@ -1,12 +1,11 @@
 k9s:
-  cluster: docker-desktop
+  cluster: k8s.nb.no
   namespace:
-    active: nbno-local
+    active: auau
     lockFavorites: false
     favorites:
-    - nbno-local
-    - all
-    - kube-public
+    - auau
+    - nbno
     - default
   view:
     active: po

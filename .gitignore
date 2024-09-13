@@ -2,6 +2,7 @@
 .config/tmux/plugins/
 raycast
 fzf
-.config/staleas/.env
+.config/staleas/*
 /kubeconfig.yaml
 /dotfiles
+.config/staleas/.env.vault
