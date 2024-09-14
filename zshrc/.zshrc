@@ -17,8 +17,13 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git macos brew aliases common-aliases direnv kubectl helm fzf tmux copyfile multipass zsh-sdkman)
 
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# TODO: Switch between these paths depending on the system Linux and MacOS
+source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -85,6 +90,9 @@ _fzf_comprun() {
 }
 
 source ~/fzf-git.sh/fzf-git.sh
+
+# Make "kubecolor" borrow the same completion logic as "kubectl"
+compdef kubecolor=kubectl
 
 # thefuck alias
 eval $(thefuck --alias)

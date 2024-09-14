@@ -7,3 +7,5 @@ brew install --cask font-jetbrains-mono
 xargs brew install < homebrew/leaves.txt
 
 curl -fsSL https://get.jetify.com/devbox | bash
+
+git clone https://github.com/DevOpsHiveHQ/kubech ~/.kubech
