@@ -4,7 +4,7 @@ Green='\033[0;32m'
 NC='\033[0m'
 
 
-cd ~/dotfiles/.config/staleas/
+cd ~/dotfiles/staleas/.config/staleas/
 
 dotenvx decrypt -f .env
 

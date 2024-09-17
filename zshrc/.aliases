@@ -27,6 +27,8 @@ alias gce='gh copilot explain'
 alias zshconfig="code -n ~/.zshrc"
 alias ohmyzsh="code -n ~/.oh-my-zsh"
 
+alias python='python3'
+
 # ------------------------------------
 # Misc :)
 # ------------------------------------
