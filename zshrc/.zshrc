@@ -93,8 +93,12 @@ eval $(thefuck --alias fk)
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
+# Make "kubecolor" borrow the same completion logic as "kubectl"
+compdef kubecolor=kubectl
+
 # Completion loading
 source <(kubectl completion zsh)
+source <(kubectl argo rollouts completion zsh)
 source <(k9s completion zsh)
 source <(helm completion zsh)
 source <(helmfile completion zsh)
