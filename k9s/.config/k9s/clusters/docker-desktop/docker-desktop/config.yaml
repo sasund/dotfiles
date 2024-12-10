@@ -1,15 +1,17 @@
 k9s:
   cluster: docker-desktop
   namespace:
-    active: nbno-local
+    active: all
     lockFavorites: false
     favorites:
-    - nbno-local
     - all
     - kube-public
     - default
+    - nbno-local
+    - identity-platform
+    - auau
   view:
-    active: po
+    active: pods
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

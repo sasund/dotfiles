@@ -7,8 +7,9 @@ k9s:
     - nbno
     - auau
     - default
+    - nbno-test
   view:
-    active: pods
+    active: ns
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
