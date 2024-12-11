@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 return {
 	color_scheme = 'Material (terminal.sexy)',
 	enable_tab_bar = true,
-	font_size = 16.0,
+	font_size = 14.0,
 	font = wezterm.font('JetBrains Mono'),
 	macos_window_background_blur = 10,
 	

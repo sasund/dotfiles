@@ -12,3 +12,5 @@ sh <(curl -L https://nixos.org/nix/install)
 
 # Devbox
 curl -fsSL https://get.jetify.com/devbox | bash
+
+git clone https://github.com/DevOpsHiveHQ/kubech ~/.kubech
