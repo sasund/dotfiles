@@ -5,7 +5,8 @@ export LC_CTYPE=en_US.UTF-8
 DEVBOX_NO_PROMPT=true
 
 # Bat
-export BAT_THEME="Monokai Extended Bright"
+#export BAT_THEME="Monokai Extended Bright"
+export BAT_THEME="Catppuccin Frappe"
 
 ### OVERRIDE PATH
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Workspace/sandbox/bin:$PATH"
@@ -14,16 +15,16 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Workspace/s
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git macos brew aliases common-aliases direnv kubectl helm fzf tmux copyfile multipass zsh-sdkman)
+plugins=(git macos brew aliases common-aliases direnv kubectl helm fzf copyfile multipass zsh-sdkman)
 
 source $ZSH/oh-my-zsh.sh
 
 # TODO: Switch between these paths depending on the system Linux and MacOS
-source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
