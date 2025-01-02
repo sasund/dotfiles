@@ -21,4 +21,7 @@ sh <(curl -L https://nixos.org/nix/install)
 # Devbox
 curl -fsSL https://get.jetify.com/devbox | bash
 
-git clone https://github.com/DevOpsHiveHQ/kubech ~/.kubech
+#git clone https://github.com/DevOpsHiveHQ/kubech ~/.kubech
+
+# Atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
