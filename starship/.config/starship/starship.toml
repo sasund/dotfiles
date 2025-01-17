@@ -140,7 +140,7 @@ symbol = " "
 [kubernetes]
 disabled = false
 symbol = "☸ "
-format = '[$symbol$context( \($namespace\))]($style) in '
+format = '[$symbol$context( \($namespace\))]($style) '
 style = "cyan bold"
 
 [lua]

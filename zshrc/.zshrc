@@ -9,7 +9,7 @@ DEVBOX_NO_PROMPT=true
 export BAT_THEME="Catppuccin Frappe"
 
 ### OVERRIDE PATH
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Workspace/sandbox/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Developer/sandbox/bin:$PATH"
 ### OVERRIDE PATH END
 
 # Path to your oh-my-zsh installation.

@@ -8,7 +8,7 @@ k9s:
     - nbno
     - default
   view:
-    active: ns
+    active: deploy
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
