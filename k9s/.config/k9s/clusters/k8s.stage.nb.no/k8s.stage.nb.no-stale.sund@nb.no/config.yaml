@@ -1,7 +1,7 @@
 k9s:
   cluster: k8s.stage.nb.no
   namespace:
-    active: auau
+    active: nbno
     lockFavorites: false
     favorites:
     - nbno
@@ -9,7 +9,7 @@ k9s:
     - default
     - nbno-test
   view:
-    active: pods
+    active: deploy
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

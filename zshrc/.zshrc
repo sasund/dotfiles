@@ -90,7 +90,7 @@ _fzf_comprun() {
   esac
 }
 
-source ~/fzf-git.sh/fzf-git.sh
+#source ~/fzf-git.sh/fzf-git.sh
 
 # Make "kubecolor" borrow the same completion logic as "kubectl"
 compdef kubecolor=kubectl
