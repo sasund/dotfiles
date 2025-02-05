@@ -19,8 +19,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias cd='z'
 
-
-
 alias fzfp='fzf --preview \"bat --number --color always {}\"'
 alias cat='bat --paging never --theme DarkNeon --style plain'
 
@@ -69,8 +67,6 @@ alias baty="bat -l yaml"
 alias batj="bat -l json"
 alias cssh="tmux-cssh"
 
-
-
 alias reload="source ~/.zshrc"
 alias watch='watch ' # For watch to understand aliases
 alias listenPorts="sudo lsof -i -P | grep LISTEN"
@@ -78,7 +74,6 @@ alias c="curlie"
 
 alias nbl="nblookup"
 alias dognb="dog -n 158.39.128.157 -q"
-
 
 alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
 alias scp='\scp'
@@ -100,7 +95,6 @@ alias bubu='bubo && bup'
 # Aliases Kubernetes
 # ------------------------------------
 alias kubectl=kubecolor
-
 alias helmd="helm dashboard"
 alias bwe="batwatch --color  --command kubectl get events"
 alias bwp="batwatch --color  --command kubectl get pods"
@@ -116,8 +110,6 @@ alias k8sdebug="kubectl run -i --tty busyboxdebug --image=harbor.nb.no/auau/tool
 alias k8sdebugmaven="kubectl run -i --tty maven-java-debug --image=harbor.nb.no/staleas/java-maven-bash-debug:1.1.1_amd64 --rm=true --restart=Never -- sh"
 alias ktr="kubespy trace deploy"
 alias kubefwd-configserver="sudo kubefwd svc -n nbno -f metadata.name=configserver"
-
-
 
 
 # ------------------------------------
