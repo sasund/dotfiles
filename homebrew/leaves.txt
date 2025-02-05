@@ -65,6 +65,7 @@ kustomize
 lazydocker
 lazygit
 ldns
+llm
 mcfly
 md5sha1sum
 mdless

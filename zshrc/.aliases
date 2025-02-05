@@ -1,22 +1,40 @@
 
 # Aliases
 
+# Common
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias less='less -r'                            # raw control characters
+alias whence='type -a'                          # where, of a sort
+alias grep='grep --color'                       # show differences in colour
+alias egrep='egrep --color=auto'                # pretty grep
+alias fgrep='fgrep --color=auto'
+alias nmap='nmap -PN'                           # in case host is blocking ping probes.
+alias bc='bc -l'# math
+
+# Replace
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
 alias cd='z'
-#alias ls='eza --long --all --no-permissions --no-filesize --no-user --no-time --git'
-alias lst='eza --long --all --no-permissions --no-filesize --no-user --git --sort modified'
+
+
+
 alias fzfp='fzf --preview \"bat --number --color always {}\"'
 alias cat='bat --paging never --theme DarkNeon --style plain'
 
 
 # Eza
 #
+alias lst='eza --long --all --git --sort modified'
 alias ls='eza -F -gh --group-directories-first --git --icons'
 alias lh='ls -d .*'
 alias lD='ls -D'
 alias lc='ls -1'
-
 alias ll='ls -l'
 alias la='ll -a'
+alias ldot='ls -ld .*'
 alias tree='ls -T'
 
 alias copilot='gh copilot'
@@ -29,24 +47,60 @@ alias ohmyzsh="code -n ~/.oh-my-zsh"
 
 alias python='python3'
 
+# Command line head / tail shortcuts
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g L="| less"
+alias -g M="| most"
+alias -g LL="2>&1 | less"
+alias -g CA="2>&1 | cat -A"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
+alias -g P="2>&1| pygmentize -l pytb"
+
+alias -g RG="| rg"
+alias -g JQF='| jq -R -r ". as \$line | try fromjson catch \$line"'
+
 # ------------------------------------
 # Misc :)
 # ------------------------------------
-alias less='less -r'                            # raw control characters
-alias whence='type -a'                          # where, of a sort
-alias grep='grep --color'                       # show differences in colour
-alias egrep='egrep --color=auto'                # pretty grep
-alias fgrep='fgrep --color=auto'
-alias nmap='nmap -PN'                           # in case host is blocking ping probes.
-alias bc='bc -l'# math
-alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
 alias baty="bat -l yaml"
 alias batj="bat -l json"
 alias cssh="tmux-cssh"
+
+
+
+alias reload="source ~/.zshrc"
+alias watch='watch ' # For watch to understand aliases
+alias listenPorts="sudo lsof -i -P | grep LISTEN"
+alias c="curlie"
+
+alias nbl="nblookup"
+alias dognb="dog -n 158.39.128.157 -q"
+
+
+alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
+alias scp='\scp'
+alias yqnc="yq eval '... comments=\"\"'"
+alias aitop="sudo asitop"
+
 alias vmo="curl wttr.in/mo+i+rana"
 alias v2mo="curl v2d.wttr.in/mo+i+rana"
+
+
+# ------------------------------------
+# Aliases Brew
+# ------------------------------------
+alias bubo='brew update && brew outdated'
+alias bup='brew upgrade'
+alias bubu='bubo && bup'
+
+# ------------------------------------
+# Aliases Kubernetes
+# ------------------------------------
+alias kubectl=kubecolor
+
 alias helmd="helm dashboard"
 alias bwe="batwatch --color  --command kubectl get events"
 alias bwp="batwatch --color  --command kubectl get pods"
@@ -54,27 +108,17 @@ alias bws="batwatch --color  --command kubectl get svc"
 alias bwi="batwatch --color  --command kubectl get ing"
 alias bwa="batwatch --color --interval=10  --command kubectl get all"
 alias k9sh="k9s --headless"
-alias kubectl=kubecolor
+
 alias kctx="kubectl config get-contexts"
 alias kns="kubectl get namespaces"
 alias kgn="kubectl get namespaces"
-alias reload="source ~/.zshrc"
-alias watch='watch ' # For watch to understand aliases
-alias listenPorts="sudo lsof -i -P | grep LISTEN"
-alias c="curlie"
-alias nbf="nblookupForeman"
-alias nbc="nblookupCname"
-alias nb="nblookup"
 alias k8sdebug="kubectl run -i --tty busyboxdebug --image=harbor.nb.no/auau/tools-jobrunner:debug --rm=true --restart=Never -- sh"
 alias k8sdebugmaven="kubectl run -i --tty maven-java-debug --image=harbor.nb.no/staleas/java-maven-bash-debug:1.1.1_amd64 --rm=true --restart=Never -- sh"
 alias ktr="kubespy trace deploy"
-alias dognb="dog -n 158.39.128.157 -q"
-alias -g RG="| rg"
 alias kubefwd-configserver="sudo kubefwd svc -n nbno -f metadata.name=configserver"
-alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
-alias scp='\scp'
-alias yqnc="yq eval '... comments=\"\"'"
-alias aitop="sudo asitop"
+
+
+
 
 # ------------------------------------
 # Aliases Maven

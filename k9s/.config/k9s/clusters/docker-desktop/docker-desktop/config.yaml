@@ -7,9 +7,9 @@ k9s:
     - all
     - kube-public
     - default
+    - auau
     - nbno-local
     - identity-platform
-    - auau
   view:
     active: pods
   featureGates:

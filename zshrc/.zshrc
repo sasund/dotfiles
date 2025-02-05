@@ -15,7 +15,7 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Developer/s
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git macos brew aliases common-aliases direnv kubectl helm fzf copyfile multipass zsh-sdkman)
+plugins=(git direnv kubectl zsh-sdkman)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,28 +102,25 @@ eval $(thefuck --alias fk)
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
-# Make "kubecolor" borrow the same completion logic as "kubectl"
-compdef kubecolor=kubectl
-
 # Completion loading
 source <(kubectl completion zsh)
-source <(kubectl argo rollouts completion zsh)
+#source <(kubectl argo rollouts completion zsh)
 source <(k9s completion zsh)
 source <(helm completion zsh)
-source <(helmfile completion zsh)
+#source <(helmfile completion zsh)
 #source <(kubectl deprecations completion zsh)
-source <(kustomize completion zsh)
-source <(skaffold completion zsh)
+#source <(kustomize completion zsh)
+#source <(skaffold completion zsh)
 source <(stern --completion=zsh)
-source <(kubespy completion zsh)
-source <(kubeshark completion zsh)
-source <(argo completion zsh)
-source <(opa completion zsh)
+#source <(kubespy completion zsh)
+#source <(kubeshark completion zsh)
+#source <(argo completion zsh)
+#source <(opa completion zsh)
 source <(tilt completion zsh)
 source <(yq shell-completion zsh)
-source <(clc completion zsh)
-source <(kondo --completions zsh)
-source <(jwt completion zsh)
+#source <(clc completion zsh)
+#source <(kondo --completions zsh)
+#source <(jwt completion zsh)
 
 source ~/.kubech/kubech
 

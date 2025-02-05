@@ -1,2 +1,3 @@
-theme = Apple System Colors
+#theme = Apple System Colors
+theme = catppuccin-frappe
 font-family = "Hack Nerd Font Mono JBM Ligatured"
