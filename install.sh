@@ -7,7 +7,7 @@ brew install --cask font-jetbrains-mono
 brew install --cask hyperkey
 brew install --cask raycast
 brew install --cask ghostty
-
+brew install --cask warp
 
 brew install --cask google-chrome
 brew install --cask intellij-idea
