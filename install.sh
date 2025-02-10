@@ -4,7 +4,6 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install --cask font-jetbrains-mono
-brew install --cask hyperkey
 brew install --cask raycast
 brew install --cask ghostty
 brew install --cask warp
