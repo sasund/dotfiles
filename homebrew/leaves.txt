@@ -18,7 +18,6 @@ coreutils
 ctop
 cue-lang/tap/cue
 curl
-derailed/popeye/popeye
 deviceinsight/packages/kafkactl
 difftastic
 direnv
@@ -42,7 +41,6 @@ gnu-sed
 gnupg
 go
 go-task
-gobuster
 grafana
 gron
 gum
@@ -56,7 +54,6 @@ k9s
 kondo
 kubecolor
 kubectx
-kubent
 kubeshark
 kubespy
 kustomize

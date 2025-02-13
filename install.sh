@@ -25,3 +25,6 @@ curl -fsSL https://get.jetify.com/devbox | bash
 
 # Atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+# SDKman
+curl -s "https://get.sdkman.io" | bash
