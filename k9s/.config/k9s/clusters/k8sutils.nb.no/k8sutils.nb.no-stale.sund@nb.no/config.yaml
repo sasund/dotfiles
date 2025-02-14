@@ -1,17 +1,13 @@
 k9s:
-  cluster: docker-desktop
+  cluster: k8sutils.nb.no
   namespace:
-    active: auau
+    active: arc-runners
     lockFavorites: false
     favorites:
-    - all
+    - arc-runners
     - default
-    - kube-public
-    - auau
-    - nbno-local
-    - identity-platform
   view:
-    active: pod
+    active: po
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

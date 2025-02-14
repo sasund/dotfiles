@@ -1,4 +1,3 @@
-
 # Aliases
 
 # Common
@@ -82,7 +81,7 @@ alias aitop="sudo asitop"
 
 alias vmo="curl wttr.in/mo+i+rana"
 alias v2mo="curl v2d.wttr.in/mo+i+rana"
-
+alias lb="sed 's/\\\\n/\\n/g; s/\\\\t/\\t/g'"
 
 # ------------------------------------
 # Aliases Brew

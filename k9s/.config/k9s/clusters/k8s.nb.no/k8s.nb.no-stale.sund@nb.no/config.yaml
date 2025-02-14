@@ -1,14 +1,15 @@
 k9s:
   cluster: k8s.nb.no
   namespace:
-    active: nbno
+    active: auau
     lockFavorites: false
     favorites:
+    - cert-manager
     - auau
     - nbno
     - default
   view:
-    active: deploy
+    active: ns
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
