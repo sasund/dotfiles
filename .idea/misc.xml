@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaDocConfiguration">
@@ -207,3 +208,12 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
+||||||| e677670
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+>>>>>>> 869c5a037a722b9233120b650f83af1a5e1b282b

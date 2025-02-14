@@ -11,7 +11,7 @@ k9s:
     - default
     - nbno-test
   view:
-    active: ns
+    active: pods
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
