@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="lib">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/.devbox/nix/profile/default-1-link/google-cloud-sdk/platform/anthoscli_licenses/lib.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
