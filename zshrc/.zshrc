@@ -90,6 +90,10 @@ _fzf_comprun() {
   esac
 }
 
+
+autoload -Uz compinit
+compinit
+
 #source ~/fzf-git.sh/fzf-git.sh
 
 # Make "kubecolor" borrow the same completion logic as "kubectl"
@@ -121,6 +125,7 @@ source <(yq shell-completion zsh)
 #source <(clc completion zsh)
 #source <(kondo --completions zsh)
 #source <(jwt completion zsh)
+source <(limactl completion zsh)
 
 source ~/.kubech/kubech
 
@@ -151,8 +156,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME=~/.sdkman/candidates/java/current
 export IDEA_JDK=$JAVA_HOME
 export MAVEN_OPTS="-Xmx2048m"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/staleas/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
+# OVERRIDE for colima
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address')
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
