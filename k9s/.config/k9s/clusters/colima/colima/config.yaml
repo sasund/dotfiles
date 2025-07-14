@@ -1,17 +1,15 @@
 k9s:
-  cluster: docker-desktop
+  cluster: colima
   namespace:
     active: all
     lockFavorites: false
     favorites:
       - all
-      - default
-      - kube-public
       - nbno-local
-      - auau
-      - identity-platform
+      - default
+      - nbno
   view:
-    active: ns
+    active: po
   featureGates:
     nodeShell: false
   proxy: null

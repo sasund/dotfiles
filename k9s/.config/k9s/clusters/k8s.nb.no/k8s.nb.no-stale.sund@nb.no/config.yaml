@@ -4,12 +4,12 @@ k9s:
     active: auau
     lockFavorites: false
     favorites:
-      - all
-      - auau
-      - nbno
-      - default
+    - cert-manager
+    - auau
+    - nbno
+    - default
   view:
-    active: pods
+    active: ns
   featureGates:
     nodeShell: false
-  proxy: null
+  portForwardAddress: localhost

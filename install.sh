@@ -10,7 +10,7 @@ brew install --cask warp
 
 brew install --cask google-chrome
 brew install --cask intellij-idea
-
+brew install --cask alt-tab
 
 xargs brew install < homebrew/leaves.txt
 
@@ -25,5 +25,7 @@ curl -fsSL https://get.jetify.com/devbox | bash
 # Atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
-# SDKman
+# sdkman
 curl -s "https://get.sdkman.io" | bash
+
+
