@@ -1,0 +1,15 @@
+k9s:
+  cluster: colima
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - nbno-local
+      - default
+      - nbno
+  view:
+    active: po
+  featureGates:
+    nodeShell: false
+  proxy: null

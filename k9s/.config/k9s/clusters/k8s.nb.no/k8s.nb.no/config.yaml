@@ -1,0 +1,16 @@
+k9s:
+  cluster: k8s.nb.no
+  namespace:
+    active: nettarkivet
+    lockFavorites: false
+    favorites:
+      - nettarkivet
+      - all
+      - nbno
+      - auau
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null
