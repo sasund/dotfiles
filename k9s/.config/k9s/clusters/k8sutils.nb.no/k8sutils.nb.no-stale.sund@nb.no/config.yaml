@@ -1,17 +1,13 @@
 k9s:
-  cluster: k8s.stage.nb.no
+  cluster: k8sutils.nb.no
   namespace:
-    active: auau
+    active: arc-runners
     lockFavorites: false
     favorites:
-    - cert-manager
-    - e2e
-    - nbno
-    - auau
+    - arc-runners
     - default
-    - nbno-test
   view:
-    active: pods
+    active: po
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

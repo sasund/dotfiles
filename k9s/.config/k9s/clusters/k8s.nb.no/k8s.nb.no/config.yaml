@@ -1,17 +1,16 @@
 k9s:
-  cluster: docker-desktop
+  cluster: k8s.nb.no
   namespace:
-    active: all
+    active: nettarkivet
     lockFavorites: false
     favorites:
+      - nettarkivet
       - all
-      - default
-      - kube-public
-      - nbno-local
+      - nbno
       - auau
-      - identity-platform
+      - default
   view:
-    active: ns
+    active: pods
   featureGates:
     nodeShell: false
   proxy: null

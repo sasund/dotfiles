@@ -6,3 +6,6 @@ staleas/*
 /kubeconfig.yaml
 /dotfiles
 .config/staleas/.env.vault
+.idea
+.idea/*
+.vscode

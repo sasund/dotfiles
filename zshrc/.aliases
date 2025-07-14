@@ -1,3 +1,5 @@
+#!/bin/zsh
+# -*- mode: zsh -*-
 
 # Aliases
 
@@ -25,7 +27,6 @@ alias cat='bat --paging never --theme DarkNeon --style plain'
 
 
 # Eza
-#
 alias lst='eza --long --all --git --sort modified'
 alias ls='eza -F -gh --group-directories-first --git --icons'
 alias lh='ls -d .*'
@@ -61,6 +62,8 @@ alias -g P="2>&1| pygmentize -l pytb"
 alias -g RG="| rg"
 alias -g JQF='| jq -R -r ". as \$line | try fromjson catch \$line"'
 
+alias llm_cat_dir="find . -maxdepth 1 -type f | xargs -I {} sh -c 'echo \"\n=== {} ===\n\"; cat {}'"
+
 # ------------------------------------
 # Misc :)
 # ------------------------------------
@@ -83,7 +86,7 @@ alias aitop="sudo asitop"
 
 alias vmo="curl wttr.in/mo+i+rana"
 alias v2mo="curl v2d.wttr.in/mo+i+rana"
-
+alias lb="sed 's/\\\\n/\\n/g; s/\\\\t/\\t/g'" # Remove linebreaks and tabs from output
 
 # ------------------------------------
 # Aliases Brew
@@ -111,6 +114,18 @@ alias k8sdebug="kubectl run -i --tty busyboxdebug --image=harbor.nb.no/auau/tool
 alias k8sdebugmaven="kubectl run -i --tty maven-java-debug --image=harbor.nb.no/staleas/java-maven-bash-debug:1.1.1_amd64 --rm=true --restart=Never -- sh"
 alias ktr="kubespy trace deploy"
 alias kubefwd-configserver="sudo kubefwd svc -n nbno -f metadata.name=configserver"
+
+
+# ------------------------------------
+# Aliases Git
+# ------------------------------------
+alias gits='git status'
+alias gita='git add -u'
+gitm() { git commit -m "$1" }
+alias gitp='git push'
+alias gitu='git commit -m "Update $(date +%F)"'
+alias gitq='git add -u && git commit -m "Update $(date +%F)" && git push'
+#alias gitc='aicommits' # requires aicommits installed (https://github.com/Nutlope/aicommits)
 
 
 # ------------------------------------
