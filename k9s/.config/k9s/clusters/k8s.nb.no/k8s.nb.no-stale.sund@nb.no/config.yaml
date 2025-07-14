@@ -1,14 +1,15 @@
 k9s:
   cluster: k8s.nb.no
   namespace:
-    active: nbno
+    active: auau
     lockFavorites: false
     favorites:
-    - auau
-    - nbno
-    - default
+      - all
+      - auau
+      - nbno
+      - default
   view:
-    active: deploy
+    active: pods
   featureGates:
     nodeShell: false
-  portForwardAddress: localhost
+  proxy: null

@@ -18,6 +18,7 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias cd='z'
+alias codei='code-insiders'
 
 alias fzfp='fzf --preview \"bat --number --color always {}\"'
 alias cat='bat --paging never --theme DarkNeon --style plain'
@@ -152,4 +153,8 @@ function drm() { docker rm $(docker ps -a -q); }  # Remove all containers
 function dri_all() { docker rmi -f $(docker images -q); }  # Remove all images
 function dbu() { docker build -t=$1 .; }  # Dockerfile build, e.g., $dbu tcnksm/test
 function dri_name() { docker rmi $(docker images |grep $1); }
+
+
+# Proxy test
+alias proxyTest='curl -I --proxy http://proxy1.lx.nb.no:3128 -w "Proxy: %{proxy_used}\nRemote IP: %{remote_ip}\nHTTP Code: %{http_code}\n" https://www.vg.no'
 

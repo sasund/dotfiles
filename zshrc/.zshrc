@@ -151,3 +151,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME=~/.sdkman/candidates/java/current
 export IDEA_JDK=$JAVA_HOME
 export MAVEN_OPTS="-Xmx2048m"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/staleas/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
