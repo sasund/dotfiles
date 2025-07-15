@@ -122,7 +122,7 @@ source <(yq shell-completion zsh)
 #source <(clc completion zsh)
 #source <(kondo --completions zsh)
 #source <(jwt completion zsh)
-source <(limactl completion zsh)
+#source <(limactl completion zsh)
 
 source ~/.kubech/kubech
 
