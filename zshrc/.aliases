@@ -119,6 +119,7 @@ alias kubefwd-configserver="sudo kubefwd svc -n nbno -f metadata.name=configserv
 # ------------------------------------
 # Aliases Git
 # ------------------------------------
+alias gl='git pull'
 alias gcl='git clone --recurse-submodules'
 alias gitcl='git clone --recurse-submodules'
 alias gits='git status'
