@@ -1,0 +1,23 @@
+[user]
+	name = staleas
+  email = stale.sund@nb.no
+[core]
+  pager = delta
+	autocrlf = input
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  side-by-side=true
+[merge]
+  conflictstyle = diff3
+[diff]
+  external = difft
+  colorMoved = default
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	adog = log --all --decorate --oneline --graph
