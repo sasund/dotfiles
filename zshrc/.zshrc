@@ -13,15 +13,12 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Developer/s
 ### OVERRIDE PATH END
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+#export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git direnv kubectl zsh-sdkman)
+#plugins=(git direnv kubectl zsh-sdkman)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
-# TODO: Switch between these paths depending on the system Linux and MacOS
-#source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -90,6 +87,10 @@ _fzf_comprun() {
   esac
 }
 
+
+autoload -Uz compinit
+compinit
+
 #source ~/fzf-git.sh/fzf-git.sh
 
 # Make "kubecolor" borrow the same completion logic as "kubectl"
@@ -121,6 +122,7 @@ source <(yq shell-completion zsh)
 #source <(clc completion zsh)
 #source <(kondo --completions zsh)
 #source <(jwt completion zsh)
+source <(limactl completion zsh)
 
 source ~/.kubech/kubech
 
@@ -141,7 +143,8 @@ export K9S_CONFIG_DIR=~/.config/k9s
 # System env
 source ~/.config/staleas/.env.system
 source ~/dotfiles/zshrc/.aliases
-
+source ~/dotfiles/zshrc/.kubectl
+#source ~/dotfiles/zshrc/.git
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -151,8 +154,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME=~/.sdkman/candidates/java/current
 export IDEA_JDK=$JAVA_HOME
 export MAVEN_OPTS="-Xmx2048m"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/staleas/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
