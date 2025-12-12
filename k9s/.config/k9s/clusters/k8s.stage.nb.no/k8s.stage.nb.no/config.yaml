@@ -1,15 +1,16 @@
 k9s:
   cluster: k8s.stage.nb.no
   namespace:
-    active: nbno
+    active: auau
     lockFavorites: false
     favorites:
+      - e2e
       - secret-agent
       - nbno
       - auau
       - default
   view:
-    active: deploy
+    active: apps/v1/deployments auau
   featureGates:
     nodeShell: false
   proxy: null

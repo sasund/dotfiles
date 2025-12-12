@@ -1,6 +1,8 @@
 #theme = Apple System Colors
-#theme = catppuccin-frappe
-#theme = SeaShells
-theme = Monokai Pro Machine
-font-family = "Hack Nerd Font Mono JBM Ligatured"
+#theme = Catppuccin Frappe
+theme = Bluloco Dark
+#theme = Monokai Pro Machine
+#theme = Solarized Dark Higher Contrast
+#font-family = "Hack Nerd Font Mono JBM Ligatured"
+font-family = "psudoFont Liga Mono Regular"
 font-size = 14

@@ -1,16 +1,14 @@
 k9s:
-  cluster: k8s.nb.no
+  cluster: rke2.stales.nb.no
   namespace:
-    active: nbno
+    active: monitoring
     lockFavorites: false
     favorites:
-      - nettarkivet
+      - monitoring
       - all
-      - nbno
-      - auau
       - default
   view:
-    active: apps/v1/deployments nbno
+    active: ns
   featureGates:
     nodeShell: false
   proxy: null
