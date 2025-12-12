@@ -1,7 +1,7 @@
 k9s:
   cluster: k8s.stage.nb.no
   namespace:
-    active: auau
+    active: nbno
     lockFavorites: false
     favorites:
       - e2e
