@@ -5,24 +5,13 @@ export LC_CTYPE=en_US.UTF-8
 DEVBOX_NO_PROMPT=true
 
 # Bat
-#export BAT_THEME="Monokai Extended Bright"
-#export BAT_THEME="Catppuccin Frappe"
 export BAT_CONFIG_PATH="${HOME}/.config/bat/config-dark.conf"
 #export BAT_CONFIG_PATH="${HOME}/.config/bat/config-light.conf"
-
 export BAT_THEME="bluloco-dark"
 
 ### OVERRIDE PATH
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Developer/sandbox/bin:$PATH"
 ### OVERRIDE PATH END
-
-# Path to your oh-my-zsh installation.
-#export ZSH="$HOME/.oh-my-zsh"
-
-#plugins=(git direnv kubectl zsh-sdkman)
-
-#source $ZSH/oh-my-zsh.sh
-
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -144,8 +133,6 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # k9s
 export K9S_CONFIG_DIR=~/.config/k9s
 
-
-#keys
 # System env
 source ~/.config/staleas/.env.system
 source ~/dotfiles/zshrc/.aliases
@@ -172,10 +159,6 @@ fpath=(/Users/staleas/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/staleas/.lmstudio/bin"
-# End of LM Studio CLI section
 
 
 PATH="/Users/staleas/perl5/bin${PATH:+:${PATH}}"; export PATH;
