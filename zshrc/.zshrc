@@ -5,20 +5,13 @@ export LC_CTYPE=en_US.UTF-8
 DEVBOX_NO_PROMPT=true
 
 # Bat
-#export BAT_THEME="Monokai Extended Bright"
-export BAT_THEME="Catppuccin Frappe"
+export BAT_CONFIG_PATH="${HOME}/.config/bat/config-dark.conf"
+#export BAT_CONFIG_PATH="${HOME}/.config/bat/config-light.conf"
+export BAT_THEME="bluloco-dark"
 
 ### OVERRIDE PATH
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/Users/staleas/Developer/sandbox/bin:$PATH"
 ### OVERRIDE PATH END
-
-# Path to your oh-my-zsh installation.
-#export ZSH="$HOME/.oh-my-zsh"
-
-#plugins=(git direnv kubectl zsh-sdkman)
-
-#source $ZSH/oh-my-zsh.sh
-
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -122,7 +115,6 @@ source <(yq shell-completion zsh)
 #source <(clc completion zsh)
 #source <(kondo --completions zsh)
 #source <(jwt completion zsh)
-#source <(limactl completion zsh)
 
 source ~/.kubech/kubech
 
@@ -154,3 +146,25 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME=~/.sdkman/candidates/java/current
 export IDEA_JDK=$JAVA_HOME
 export MAVEN_OPTS="-Xmx2048m"
+export PATH="$HOME/.local/bin:$PATH"
+
+
+export DOCKER_API_VERSION=1.44
+# Task Master aliases added on 10/9/2025
+alias tm='task-master'
+alias taskmaster='task-master'
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/staleas/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+
+PATH="/Users/staleas/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/staleas/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/staleas/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/staleas/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/staleas/perl5"; export PERL_MM_OPT;
+
+# Added by Antigravity
+export PATH="/Users/staleas/.antigravity/antigravity/bin:$PATH"

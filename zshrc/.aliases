@@ -23,7 +23,7 @@ alias cd='z'
 alias codei='code-insiders'
 
 alias fzfp='fzf --preview \"bat --number --color always {}\"'
-alias cat='bat --paging never --theme DarkNeon --style plain'
+alias cat='bat --paging never --style plain'
 
 
 # Eza
@@ -46,6 +46,8 @@ alias zshconfig="code -n ~/.zshrc"
 alias ohmyzsh="code -n ~/.oh-my-zsh"
 
 alias python='python3'
+
+alias vpnfix='sudo ifconfig $(ifconfig | grep -B 1 "192.168.45" | head -1 | choose 0 | tr -d ":") mtu 1280'
 
 # Command line head / tail shortcuts
 alias -g H='| head'

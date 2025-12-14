@@ -21,8 +21,6 @@ coreutils
 ctop
 cue-lang/tap/cue
 curlie
-dbus
-deviceinsight/packages/kafkactl
 difftastic
 direnv
 dive
@@ -40,6 +38,7 @@ gh
 ghostscript
 git
 git-delta
+git-filter-repo
 git-lfs
 gitleaks
 glow
@@ -47,6 +46,7 @@ gnu-sed
 go-parquet-tools
 go-task
 grafana
+grex
 gron
 grype
 gum
@@ -57,8 +57,10 @@ imagemagick
 jemalloc
 jj
 jq
+jqp
 k6
 k9s
+kafkactl
 kondo
 kubecolor
 kubeconform
@@ -68,7 +70,6 @@ kubespy
 kustomize
 lazygit
 ldns
-libxtst
 lima
 llm
 luarocks
@@ -88,10 +89,10 @@ ncdu
 neovim
 ngrep
 nmap
-noahgorstein/tap/jqp
 nvtop
 opa
 openai-whisper
+opencode
 openjdk@11
 operator-sdk
 parquet-cli
@@ -111,7 +112,6 @@ redpanda-data/tap/redpanda
 ripgrep-all
 rmlint
 rnr
-robotsandpencils/made/xcodes
 rust
 saulpw/vd/visidata
 sd
@@ -121,14 +121,19 @@ starship
 stern
 stow
 sysdig
+tctl
 tectonic
 telepresenceio/telepresence/telepresence-oss
 teller
 telnet
+temporal
+tesseract-lang
 thefuck
 tig
 tilt
 tlrc
+tokei
+tree-sitter
 trivy
 txn2/tap/kubefwd
 vault-cli

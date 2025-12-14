@@ -5,13 +5,14 @@ k9s:
     lockFavorites: false
     favorites:
       - all
-      - default
       - kube-public
-      - nbno-local
+      - default
       - auau
+      - argocd
+      - nbno-local
       - identity-platform
   view:
-    active: ns
+    active: v1/pods longhorn-system
   featureGates:
     nodeShell: false
   proxy: null

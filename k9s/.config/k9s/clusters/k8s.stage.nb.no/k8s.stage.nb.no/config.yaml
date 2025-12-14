@@ -4,12 +4,13 @@ k9s:
     active: nbno
     lockFavorites: false
     favorites:
+      - e2e
       - secret-agent
       - nbno
       - auau
       - default
   view:
-    active: deploy
+    active: apps/v1/deployments auau
   featureGates:
     nodeShell: false
   proxy: null

@@ -11,7 +11,7 @@ k9s:
     crumbsless: false
     reactive: false
     noIcons: false
-    skin: catppuccin-frappe
+    skin: bluloco-dark
     defaultsToFullScreen: false
   skipLatestRevCheck: false
   disablePodCounting: false
