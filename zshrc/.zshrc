@@ -124,7 +124,6 @@ if command -v ngrok &>/dev/null; then
 fi
 
 # Atuin
-source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
 # Krew 

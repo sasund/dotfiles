@@ -10,7 +10,7 @@ k9s:
       - auau
       - default
   view:
-    active: apps/v1/deployments auau
+    active: apps/v1/deployments nbno
   featureGates:
     nodeShell: false
   proxy: null
